@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: center;
     background-color: black;
-    height: 100vh;
+    height: 105vh;
     width: 100vw;
 }
 .bienvenida img{
@@ -24,7 +24,6 @@
     width: 90%;
 }
 .flecha {
-    transform: rotate(-90deg);
     background-color: black;
     border-radius: 50%;
     position: absolute;
