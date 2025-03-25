@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
 }
+@keyframes miTransition{
+    from{
+        width: 10%;
+    }
+    to{
+        width: 90%;
+        transition: ease-out 2s;
+    }
+}
 .bienvenida{
     display: flex;
     align-items: center;
@@ -11,9 +20,8 @@
     width: 100vw;
 }
 .bienvenida img{
-    transform: scale(9);
-    transition: ease-out 2s 0.1s ;
-    width: 10%;
+    animation: miTransition 2s;
+    width: 90%;
 }
 .flecha {
     transform: rotate(-90deg);
