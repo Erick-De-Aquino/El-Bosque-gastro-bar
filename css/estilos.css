@@ -6,8 +6,8 @@
     align-items: center;
     justify-content: center;
     background-color: black;
-    height: 110vh;
-    width: 500px;
+    height: 100vh;
+    width: 100vw;
 }
 .bienvenida{
     display: flex;
