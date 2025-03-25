@@ -3,12 +3,20 @@
     padding: 0;
 }
 @keyframes miTransition{
-    from{
-        width: 10%;
+    0%{
+        
+        opacity: 0;
+        transform: translateY(50px);
     }
-    to{
-        width: 90%;
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        
         transition: ease-out 2s;
+        opacity: 1;
+        transform: translateY(0px);
+
     }
 }
 section{
@@ -20,7 +28,8 @@ section{
     font-family:'Times New Roman', Times, serif;
     font-weight: 100;
     letter-spacing: 8px;
-    
+    animation: miTransition 2s;
+
 }
 .bienvenida{
     display: flex;
@@ -31,9 +40,8 @@ section{
     height: 100vh;
     width: 100vw;
     color: white;
-    
 }
-.bienvenida img{
+.logo-bienvenida{
     animation: miTransition 2s;
     width: 90%;
 }
@@ -42,15 +50,19 @@ section{
     border-radius: 50%;
     position: absolute;
     bottom: 15px;
+    animation: miTransition 2s;
+
 }
 .bienvenida a{
     position: absolute;
     bottom: 50px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.5px;
+    animation: miTransition 2s;
+
 }
-.bienvenida svg{
-    position: absolute;
-    bottom: 20px;
-}
+
 /*************************MENU PRINCIPAL*********************************/
 .menu-principal{
     background-color: rgb(9, 9, 9);
