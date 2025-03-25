@@ -11,13 +11,27 @@
         transition: ease-out 2s;
     }
 }
+section{
+    min-height: 100vh;
+}
+.bienvenida h1{
+    position: absolute;
+    top: 100px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    letter-spacing: 8px;
+    
+}
 .bienvenida{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items:center;
     justify-content: center;
     background-color: black;
-    height: 105vh;
+    height: 100vh;
     width: 100vw;
+    color: white;
+    
 }
 .bienvenida img{
     animation: miTransition 2s;
@@ -28,4 +42,21 @@
     border-radius: 50%;
     position: absolute;
     bottom: 15px;
+}
+.bienvenida a{
+    position: absolute;
+    bottom: 50px;
+}
+.bienvenida svg{
+    position: absolute;
+    bottom: 20px;
+}
+/*************************MENU PRINCIPAL*********************************/
+.menu-principal{
+    background-color: rgb(9, 9, 9);
+    transition: ease-in-out 1s;
+    
+    height: 100vh;
+    width: 100vw;
+    color: white;
 }
