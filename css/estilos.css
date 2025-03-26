@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-image: ;
+    min-height: 1vh;
 }
 @keyframes miTransition{
     0%{
@@ -143,59 +143,65 @@ section{
 /************************************************************************/
 /******************************TAPAS*************************************/
 /************************************************************************/
-.contenedorTapas{
-    padding: 10px;
-    text-align: center;
-}
-.contenedorTapas h2{
-    margin-bottom: 20px;
-}
-.tapas{
-    display: grid;
-    margin-bottom: 15px;
-    gap: 4px;
-    grid-template-columns: 15% 1fr 15% 5%;
-    grid-template-areas: 
-    "alergenos nombrePlato precio euro"
-    "alergenos descripcion precio euro"
-    ;
-    border-bottom: 1px solid rgb(168, 167, 167);
-    padding-bottom: 5px;
-}
 
-div{
-    
+/************************************************************************/
+/******************************PLATS*************************************/
+/************************************************************************/
+.contenedorMenu{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
 }
-div p{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+.tituloMenu{
+    margin: 20px auto;
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    border-bottom: 1px solid rgb(168, 167, 167);
+    padding-bottom: 8px;
+
 }
 .alergenos{
-    grid-area: alergenos;
-    text-align: end;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
+    width: 15%;
 }
-.nombrePlato{
+.contenidoSup{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+}
+
+.nombreDesc{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
     font-weight: 600;
-    grid-area: nombrePlato;
-    
-    
-    
 }
 .precio{
-    grid-area: precio;
-    text-align: end;
-    
+    width: 15%;
+    justify-content: center;
+    align-items: center;
 }
-.euro{
-    grid-area: euro;
-    text-align: start;
+
+.nombre{
+    justify-content: center;
+    font-size: 20px;
 }
-.descripcion{
-    grid-area: descripcion;
+.desc{
+    justify-content: center;
     font-size: 10px;
     color: rgb(61, 61, 61);
-    font-weight: 600;
-    
+}
+.complementos{
+    font-size: 18px;
+    color: rgb(61, 61, 61);
+
 }
