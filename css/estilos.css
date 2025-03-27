@@ -70,11 +70,8 @@ section{
 /************************************************************************/
 .menu-principal{
     background: url(../assets/imagenes/fondo-cemento-vertical.avif) no-repeat center center fixed;
-    /*background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;*/
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
 }
 .navbar{
@@ -217,8 +214,9 @@ section{
 .contenedorEnfants{
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
-    gap: 100px;
+    align-items: center;
+    margin-top: 50px;
+    gap: 80px;
 }
 .menuEnfants{
     display: flex;
@@ -264,7 +262,8 @@ section{
 .menu-principal-ninos{
     background: url(../assets/imagenes/fondo-ninod2.jpg) no-repeat center center fixed;
     background-size: cover;
-    
+    height: 120vh;
+    width: 100vw;
 }
 .menuEnfants p{
     margin: 20px auto;
