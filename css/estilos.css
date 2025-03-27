@@ -79,8 +79,12 @@ section{
 }
 .navbar{
     display: flex;
+    background-color: #fafafa10;
+    backdrop-filter: blur(0.4rem);
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0px;
 }
 
 .navbar div h1{
@@ -97,17 +101,19 @@ section{
     background-color: rgb(136, 136, 136);
     position: absolute;
     top: 70px;
-    right: -5px;
-    width: 35%;
+    right: 0px;
+    width: 45%;
     border-radius: 5px;
+    
 }
 .nav-links li{
     display: flex;
-    padding: 5px;
     list-style-type: none;
     border-bottom: 1px solid rgb(116, 115, 115);
     justify-content: center;
     border-radius: 5px;
+    height: 40px;
+    align-items: center;
 }
 .nav-links li:last-child{
     border-bottom: none;
@@ -211,8 +217,7 @@ section{
 .contenedorEnfants{
     display: flex;
     flex-direction: column;
-    position: relative;
-    top: 100px;
+    margin-top: 100px;
     gap: 100px;
 }
 .menuEnfants{
