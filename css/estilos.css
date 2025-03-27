@@ -38,7 +38,8 @@ section{
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    background-color: black;
+    background-image: linear-gradient(to bottom, black,rgb(31,31,31));
+    /*background-color: black;*/
     height: 100vh;
     width: 100vw;
     color: white;
@@ -49,7 +50,6 @@ section{
     width: 90%;
 }
 .flecha {
-    background-color: black;
     border-radius: 50%;
     position: absolute;
     bottom: 15px;
@@ -205,6 +205,9 @@ section{
     color: rgb(61, 61, 61);
 
 }
+/************************************************************************/
+/**************************MENUS ENFANTS*********************************/
+/************************************************************************/
 .contenedorEnfants{
     display: flex;
     flex-direction: column;
@@ -254,24 +257,16 @@ section{
     margin: 5px auto;
 }
 .menu-principal-ninos{
+    background: url(../assets/imagenes/fondo-ninod2.jpg) no-repeat center center fixed;
+    background-size: cover;
     
-    background-image: url(../assets/imagenes/fondo-ninod2.jpg);
 }
 .menuEnfants p{
     margin: 20px auto;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.infoEnfants{
-    width: 100%;
-    padding: 15px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 900;
-    background-color: gray;
-    position: absolute;
-    bottom: 0px;
-}
+
 
 .logoFondo{
     position: fixed;
