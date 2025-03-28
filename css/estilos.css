@@ -195,10 +195,16 @@ section{
     align-items: center;
 }
 .complementos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     font-size: 18px;
     color: rgb(61, 61, 61);
-
+    margin: 40px auto;
 }
+
 /************************************************************************/
 /**************************MENUS ENFANTS*********************************/
 /************************************************************************/
