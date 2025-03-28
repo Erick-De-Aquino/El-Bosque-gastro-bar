@@ -31,7 +31,7 @@ section{
     font-weight: 100;
     letter-spacing: 8px;
     animation: miTransition 2s;
-
+    
 }
 .bienvenida{
     display: flex;
@@ -68,12 +68,11 @@ section{
 /************************************************************************/
 /*************************MENU PRINCIPAL*********************************/
 /************************************************************************/
-.menu-principal{
-    background: url(../assets/imagenes/fondo-cemento-vertical.avif) no-repeat center center fixed;
-    background-size: cover;
-    height: 120vh;
-    width: 100vw;
+.fondoBody{
+    background-image: linear-gradient(to bottom, black,rgb(31,31,31));
+    
 }
+
 .navbar{
     display: flex;
     background-color: #fafafa10;
@@ -82,12 +81,13 @@ section{
     align-items: center;
     position: sticky;
     top: 0px;
+    z-index: 5;
 }
 
 .navbar div h1{
     font-size: 30px;
     font-weight: 500;
-    color: black;
+    color: rgba(255, 255, 255, 0.642);
     padding: 10px;
 }
 
@@ -151,6 +151,7 @@ section{
 /************************************************************************/
 
 .contenedorMenu{
+    color: rgba(255, 255, 255, 0.642);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -211,12 +212,32 @@ section{
 /************************************************************************/
 /**************************MENUS ENFANTS*********************************/
 /************************************************************************/
+.menu-principal-ninos{
+    background: url(../assets/imagenes/fonde-ninos.jpg) no-repeat center center fixed;
+    background-size: cover;
+    
+    
+    height: 120vh;
+    width: 100vw;
+}
 .contenedorEnfants{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
+    background-color: #fafafa10;
+    backdrop-filter: blur(0.7rem);
+    margin: auto;
     gap: 80px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.319);
+    z-index: 1;
+}
+.tituloMenuEnfants {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    letter-spacing: 4px;
+    font-size: 30px;
 }
 .menuEnfants{
     display: flex;
@@ -232,17 +253,10 @@ section{
     font-size: 20px;
     
 }
-.tituloMenuEnfants {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 100;
-    letter-spacing: 1.5px;
-    font-size: 30px;
-}
+
 .platsEnfants h3{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
     margin-bottom: 20px;
     font-weight: 100;
     letter-spacing: 1.5px;
@@ -250,7 +264,8 @@ section{
 }
 .platsEnfants ul{
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(45, 45, 45);
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 1px;
     margin: 20px auto;
     
 }
@@ -259,23 +274,10 @@ section{
     list-style-type: none;
     margin: 5px auto;
 }
-.menu-principal-ninos{
-    background: url(../assets/imagenes/fondo-ninod2.jpg) no-repeat center center fixed;
-    background-size: cover;
-    height: 120vh;
-    width: 100vw;
-}
+
 .menuEnfants p{
+    
     margin: 20px auto;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-
-.logoFondo{
-    position: fixed;
-    left: 25px;
-    top: 300px;
-    opacity: 0.4;
-    width: 90%;
 }
