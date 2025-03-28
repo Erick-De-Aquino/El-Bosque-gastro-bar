@@ -69,7 +69,7 @@ section{
 /*************************MENU PRINCIPAL*********************************/
 /************************************************************************/
 .fondoBody{
-    background-image: linear-gradient(to bottom, black,rgb(31,31,31));
+    background-image: linear-gradient(to bottom, rgb(11,11,11),rgb(31,31,31));
     
 }
 
@@ -160,41 +160,39 @@ section{
 }
 .tituloMenu{
     margin: 20px auto;
+    
 }
 .contenido{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 95%;
     border-bottom: 1px solid rgb(168, 167, 167);
     padding-bottom: 8px;
-
+    
 }
 .alergenos{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: end;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-    width: 15%;
+    width: 13%;
 }
 .contenidoSup{
     display: flex;
     justify-content: space-between;
     text-align: center;
-    width: 100%;
+    width: 100%;    
 }
 
 .nombreDesc{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
     font-weight: 600;
+    
 }
-.precio{
-    width: 15%;
-    justify-content: center;
-    align-items: center;
-}
-
 .nombre{
     justify-content: center;
     font-size: 20px;
@@ -204,6 +202,14 @@ section{
     font-size: 10px;
     color: rgb(61, 61, 61);
 }
+.precio{
+    display: flex;
+    width: 15%;
+    align-items: center;
+    
+}
+
+
 .complementos{
     font-size: 18px;
     color: rgb(61, 61, 61);
