@@ -144,25 +144,25 @@ section{
     position: fixed;
     top: 100px;
     right: 0px;
-    animation: miTransition2 2s;
+    animation: miTransition2 1s;
 }
 .li3{
     position: fixed;
     top: 130px;
     right: 0px;
-    animation: miTransition3 2s;
+    animation: miTransition3 1s;
 }
 .li4{
     position: fixed;
     top: 160px;
     right: 0px;
-    animation: miTransition4 2s;
+    animation: miTransition4 1s;
 }
 .li5{
     position: fixed;
     top: 190px;
     right: 0px;
-    animation: miTransition5 2s;
+    animation: miTransition5 1s;
 }
 .nav-links li:last-child{
     border-bottom: none;

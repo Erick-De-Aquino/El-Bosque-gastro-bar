@@ -1,7 +1,7 @@
-let body = document.getElementById("body");
+let contenedorMenu = document.querySelector(".contenedorMenu");
 let checkMenu = document.getElementById("check-menu");
 console.log(checkMenu.value);
 
-body.addEventListener('click',()=>{
+contenedorMenu.addEventListener('click',()=>{
     checkMenu.checked = false;
 })
