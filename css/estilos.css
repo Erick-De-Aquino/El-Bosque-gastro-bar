@@ -329,3 +329,19 @@ section{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
+/************************************************************************/
+/******************************CRRITO************************************/
+/************************************************************************/
+.carrito{
+    display: flex;    
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: rgba(255, 255, 255, 0.642);
+    border-radius: 50%;
+}
+.carrito img{
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+}
