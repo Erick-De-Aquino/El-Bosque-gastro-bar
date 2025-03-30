@@ -217,7 +217,6 @@ section{
     width: 95%;
     border-bottom: 1px solid rgb(168, 167, 167);
     padding-bottom: 8px;
-    
 }
 .alergenos{
     display: flex;
@@ -239,7 +238,7 @@ section{
     flex-direction: column;
     width: 70%;
     font-weight: 600;
-    
+    gap:10px;
 }
 .nombre{
     justify-content: center;
