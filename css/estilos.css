@@ -189,8 +189,7 @@ section{
     height: 45px;
 }
 .aqui {
-    
-    background-color: rgb(82, 82, 82);
+    background: black;
 }
 .link{
     position: fixed;
