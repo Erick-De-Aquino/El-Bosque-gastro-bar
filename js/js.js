@@ -62,6 +62,9 @@ platos.forEach(function(plato) {
     // Actualizamos el localStorage
     localStorage.setItem('carrito', JSON.stringify(carrito));
     console.log("Carrito actualizado:", carrito);
+
+
+    document.
   });
 });
 
