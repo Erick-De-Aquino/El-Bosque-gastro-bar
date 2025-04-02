@@ -339,11 +339,16 @@ section{
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: rgba(255, 255, 255, 0.642);
+    background-color: rgba(255, 255, 255);
     border-radius: 50%;
 }
 .carrito img{
     padding: 15px;
     width: 40px;
     height: 40px;
+}
+.pedido{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
 }
