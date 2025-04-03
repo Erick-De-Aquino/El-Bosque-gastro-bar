@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>El Bosque</title>
 </head>
 
@@ -11,249 +11,105 @@
 <body class="fondoBody">
 
     <main class="menu-principal">
-
         <nav class="navbar">
             <div>
                 <h1>El Bosque</h1>
             </div>
-
             <input type="checkbox" id="check-menu" class="check-menu">
-
             <ul class="nav-links" onclick="guardarMenu()">
-                <li class="li1"><a href="../views/tapas.html">TAPAS</a></li>
-                <li class="li2" style="background-color: rgb(82, 82, 82)"><a href="../views/plats.html">PLATS</a></li>
+                <li class="li1" id="prueba"><a href="../views/tapas.html">TAPAS</a></li>
+                <li class="li2"  style="background-color: rgb(82, 82, 82)"><a href="../views/plats.html">PLATS</a></li>
                 <li class="li3"><a href="../views/enfants.html">MANU ENFANTS</a></li>
                 <li class="li4"><a href="../views/boisson.html">BOISSON</a></li>
                 <li class="li5"><a href="../views/desserts.html">DESSERTS</a></li>
             </ul>
-
             <label for="check-menu" class="label-check">
                 <img class="menu-hamburguesa" src="../assets/imagenes/menu2.svg" alt="img menu" width="60" height="60">
             </label>
-
         </nav>
-        
-        <section class="contenedorMenu">
+     
+        <div class="menu-container" onclick="guardarMenu()">
+            <h2 class="titulo">PLATS</h2>
 
-            <div class="tituloMenu">
-                <h2>PLATS</h2>
-            </div>
-
-            <div class="contenido">
-                <div class="contenidoSup">
-                    <div class="alergenos">
-                        <p>Allergènes</p>
-                    </div>
-                    <div class="nombreDesc">
-                        <div class="nombre">
-                            <p></p>
-                        </div>
-                        <div class="desc">
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="precio">
-                        <p>PRIX</p>
-                    </div>
-                </div>
+            <!-- Ejemplo de ítem del menú -->
+            <div class="menu-item" data-name="Filet de Boeuf" data-price="28.90">
+                <h3>Filet de Boeuf</h3>
+                <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
+                <span class="price">$28.90</span>
+                <button class="add-to-order">Añadir a mi pedido</button>
             </div>
 
-            <div class="contenido">
-                <div class="contenidoSup">
-                    <div class="alergenos">
-                        <p>1,3,5,9</p>
-                    </div>
-                    <div class="nombreDesc">
-                        <div class="nombre">
-                            <p>Filet de Boeuf</p>
-                        </div>
-                        <div class="desc">
-                            <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
-                        </div>
-                    </div>
-                    <div class="precio">
-                        <p>28,90 €</p>
-                    </div>
-                </div>
-            </div>
-            <div class="contenido">
-                <div class="contenidoSup">
-                    <div class="alergenos">
-                        <p>1,3,5</p>
-                    </div>
-                    <div class="nombreDesc">
-                        <div class="nombre">
-                            <p>Tartare de Boeuf</p>
-                        </div>
-                        <div class="desc">
-                            <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
-                        </div>
-                    </div>
-                    <div class="precio">
-                        <p>25,00 €</p>
-                    </div>
-                </div>
-            </div>
-            <div class="contenido">
-                <div class="contenidoSup">
-                    <div class="alergenos">
-                        <p>1,3,5,12</p>
-                    </div>
-                    <div class="nombreDesc">
-                        <div class="nombre">
-                            <p>Burger Raclette</p>
-                        </div>
-                        <div class="desc">
-                            <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
-                        </div>
-                    </div>
-                    <div class="precio">
-                        <p>26,00 €</p>
-                    </div>
-                </div>
-            </div>
-            <div class="contenido">
-                <div class="contenidoSup">
-                    <div class="alergenos">
-                        <p>1,3,5,9</p>
-                    </div>
-                    <div class="nombreDesc">
-                        <div class="nombre">
-                            <p>Cannellonis d'agneau</p>
-                        </div>
-                        <div class="desc">
-                            <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
-                        </div>
-                    </div>
-                    <div class="precio">
-                        <p>27,00 €</p>
-                    </div>
-                </div>
-            </div>
-            <div class="contenido">
-                <div class="contenidoSup">
-                    <div class="alergenos">
-                        <p>1,3,5,9</p>
-                    </div>
-                    <div class="nombreDesc">
-                        <div class="nombre">
-                            <p>Canard, oignons et figues</p>
-                        </div>
-                        <div class="desc">
-                            <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
-                        </div>
-                    </div>
-                    <div class="precio">
-                        <p>26,00 €</p>
-                    </div>
-                </div>
-            </div>
-            <div class="contenido">
-                <div class="contenidoSup">
-                    <div class="alergenos">
-                        <p>1,3,5,9</p>
-                    </div>
-                    <div class="nombreDesc">
-                        <div class="nombre">
-                            <p>Poulet milanais</p>
-                        </div>
-                        <div class="desc">
-                            <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
-                        </div>
-                    </div>
-                    <div class="precio">
-                        <p>19,50 €</p>
-                    </div>
-                </div>
-            </div>
-            <div class="contenido">
-                <div class="contenidoSup">
-                    <div class="alergenos">
-                        <p>1,3,6,9,12,14</p>
-                    </div>
-                    <div class="nombreDesc">
-                        <div class="nombre">
-                            <p>Poulet nasigoreg</p>
-                        </div>
-                        <div class="desc">
-                            <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
-                        </div>
-                    </div>
-                    <div class="precio">
-                        <p>18,50 €</p>
-                    </div>
-                </div>
-            </div>
-            <div class="contenido">
-                <div class="contenidoSup">
-                    <div class="alergenos">
-                        <p>1,4,8,9</p>
-                    </div>
-                    <div class="nombreDesc">
-                        <div class="nombre">
-                            <p>Saumon méditerranée</p>
-                        </div>
-                        <div class="desc">
-                            <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
-                        </div>
-                    </div>
-                    <div class="precio">
-                        <p>25,00 €</p>
-                    </div>
-                </div>
-            </div>
-            <div class="contenido">
-                <div class="contenidoSup">
-                    <div class="alergenos">
-                        <p>1,3,4,9</p>
-                    </div>
-                    <div class="nombreDesc">
-                        <div class="nombre">
-                            <p>Daurade royal</p>
-                        </div>
-                        <div class="desc">
-                            <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
-                        </div>
-                    </div>
-                    <div class="precio">
-                        <p>22,00 €</p>
-                    </div>
-                </div>
-            </div>
-            <div class="contenido">
-                <div class="contenidoSup">
-                    <div class="alergenos">
-                        <p>1,3,5,11</p>
-                    </div>
-                    <div class="nombreDesc">
-                        <div class="nombre">
-                            <p>Poulet à la galicienne</p>
-                        </div>
-                        <div class="desc">
-                            <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
-                        </div>
-                    </div>
-                    <div class="precio">
-                        <p>28,00 €</p>
-                    </div>
-                </div>
+            <div class="menu-item" data-name="Tartare de Boeuf" data-price="25.00">
+                <h3>Tartare de Boeuf</h3>
+                <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
+                <span class="price">$25.00</span>
+                <button class="add-to-order">Añadir a mi pedido</button>
             </div>
 
-            <div class="complementos">
-                <p>Sause: Napolitaine et tomates, Champignons, Truffes, Morilles</p>
-                <p>Supplément frites 3,50€</p>
+            <div class="menu-item" data-name="Burger Raclette" data-price="26.00">
+                <h3>Burger Raclette</h3>
+                <p>Spaghetti con salsa de huevo, queso, panceta y pimienta negra</p>
+                <span class="price">$26.00</span>
+                <button class="add-to-order">Añadir a mi pedido</button>
+            </div>
+
+            <div class="menu-item" data-name="Cannellonis d'agneau" data-price="27.00">
+                <h3>Cannellonis d'agneau</h3>
+                <p>Spaghetti con salsa de huevo, queso, panceta y pimienta negra</p>
+                <span class="price">$27.00</span>
+                <button class="add-to-order">Añadir a mi pedido</button>
+            </div>
+
+            <div class="menu-item" data-name="Canard, oignons et figues" data-price="26.00">
+                <h3>Canard, oignons et figues</h3>
+                <p>Spaghetti con salsa de huevo, queso, panceta y pimienta negra</p>
+                <span class="price">$26.00</span>
+                <button class="add-to-order">Añadir a mi pedido</button>
+            </div>
+
+            <div class="menu-item" data-name="Poulet milanais" data-price="19.50">
+                <h3>Poulet milanais</h3>
+                <p>Spaghetti con salsa de huevo, queso, panceta y pimienta negra</p>
+                <span class="price">$19.50</span>
+                <button class="add-to-order">Añadir a mi pedido</button>
+            </div>
+
+            <div class="menu-item" data-name="Poulet nasigoreg" data-price="18.50">
+                <h3>Poulet nasigoreg</h3>
+                <p>Spaghetti con salsa de huevo, queso, panceta y pimienta negra</p>
+                <span class="price">$18.50</span>
+                <button class="add-to-order">Añadir a mi pedido</button>
+            </div>
+
+            <div class="menu-item" data-name="Saumon méditerranée" data-price="25.00">
+                <h3>Saumon méditerranée</h3>
+                <p>Spaghetti con salsa de huevo, queso, panceta y pimienta negra</p>
+                <span class="price">$25.00</span>
+                <button class="add-to-order">Añadir a mi pedido</button>
+            </div>
+
+            <div class="menu-item" data-name="Daurade royal" data-price="22.00">
+                <h3>Daurade royal</h3>
+                <p>Spaghetti con salsa de huevo, queso, panceta y pimienta negra</p>
+                <span class="price">$22.00</span>
+                <button class="add-to-order">Añadir a mi pedido</button>
             </div>
             
- 
-        </section>
-
-        <a class="carrito" href="../views/carrito.html">
-            <img src="../assets/imagenes/carrito.svg" alt="">
-        </a>
-        
+            <div class="menu-item" data-name="Poulpe a la galicienne" data-price="28.00">
+                <h3>Poulpe à la galicienne</h3>
+                <p>Spaghetti con salsa de huevo, queso, panceta y pimienta negra</p>
+                <span class="price">$28.00</span>
+                <button class="add-to-order">Añadir a mi pedido</button>
+            </div>
+            <!-- Más ítems del menú... -->
+        </div>
     </main>
 
-    <script src="../js/js.js"></script>
 
+    
+    
+    <a href="../views/pedido.html" class="view-order">Ver mi pedido</a>
+    
+    <script src="../js/script.js"></script>
 </body>
 </html>

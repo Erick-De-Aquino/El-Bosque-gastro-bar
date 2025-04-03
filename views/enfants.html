@@ -3,75 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>El Bosque</title>
 </head>
-<body>
-    <main class="menu-principal-ninos">
+<body class="fondoBody">
+
+    <main class="menu-principal">
         <nav class="navbar">
             <div>
                 <h1>El Bosque</h1>
             </div>
             <input type="checkbox" id="check-menu" class="check-menu">
             <ul class="nav-links" onclick="guardarMenu()">
-                <li class="li1"><a href="../views/tapas.html">TAPAS</a></li>
+                <li class="li1" id="prueba"><a href="../views/tapas.html">TAPAS</a></li>
                 <li class="li2"><a href="../views/plats.html">PLATS</a></li>
-                <li class="li3"  style="background-color: rgb(82, 82, 82)"><a href="../views/enfants.html">MANU ENFANTS</a></li>
+                <li class="li3" style="background-color: rgb(82, 82, 82)"><a href="../views/enfants.html">MANU ENFANTS</a></li>
                 <li class="li4"><a href="../views/boisson.html">BOISSON</a></li>
                 <li class="li5"><a href="../views/desserts.html">DESSERTS</a></li>
-
             </ul>
             <label for="check-menu" class="label-check">
                 <img class="menu-hamburguesa" src="../assets/imagenes/menu2.svg" alt="img menu" width="60" height="60">
             </label>
         </nav>
-        
-        <section class="contenedorMenu">
+     
+        <div class="menu-container" onclick="guardarMenu()">
+            <h2 class="titulo">MENU ENFANTS</h2>
+            <h2 class="titulo">13.90 €</h2>
+            <h2 class="titulo2">PLATS</h2>
 
-            <div class="contenedorEnfants">
-                <div class="tituloMenuEnfants">
-                    <h2>MENU ENFANTS</h2>
-                </div>
-                
-                <div class="menuEnfants">
-                    <div class="platsEnfants">
-                        <h3>PLATS</h3>
-                        <ul>
-                            <li>Fish and ships</li>
-                            <li>cheeseburger avec frites</li>
-                            <li>Nuggets de poulet avec frites</li>
-                            <li>Tagliatelles à la sauce tomate</li>
-                            <li>Escalope de poulet avec riz basmati</li>
-                        </ul>
-                    </div>
-                    <div class="platsEnfants">
-                        <h3>DESSERTS</h3>
-                        <ul>
-                            <li>Glace Fricky Fraise</li>
-                            <li>Glace Punky vanille</li>
-                            <li>Glace Kuaky Chocolat</li>
-                            <li>Crêpe au sucre ou à la Nutella</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p>Boissons: Soda ou Sirope</p>
-                        <p>Jusqu'à 10 ans</p>
-                    </div>
-                    
-                </div>
-                
+
+            <!-- Ejemplo de ítem del menú -->
+            <div class="menu-item" data-name="fish and chips" data-price="13.90">
+                <h3>Filet de Boeuf</h3>
+                <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
+                <button class="add-to-order">Añadir a mi pedido</button>
             </div>
 
-            
-        </section>
+            <div class="menu-item" data-name="cheeseburger avec frites" data-price="13.90">
+                <h3>Cheeseburger avec frites</h3>
+                <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
+                <button class="add-to-order">Añadir a mi pedido</button>
+            </div>
 
-        <a class="carrito" href="../views/carrito.html">
-            <img src="../assets/imagenes/carrito.svg" alt="">
-        </a>
-        
+            <div class="menu-item" data-name="nuggets de poulet avec frites" data-price="13.90">
+                <h3>Nuggets de poulet avec frites</h3>
+                <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
+                <button class="add-to-order">Añadir a mi pedido</button>
+            </div>
+
+            <div class="menu-item" data-name="tagliatelles à la sauce tomate" data-price="13.90">
+                <h3>Tagliatelles à la sauce tomate</h3>
+                <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
+                <button class="add-to-order">Añadir a mi pedido</button>
+            </div>
+
+            <div class="menu-item" data-name="escalope de poulet avec riz basmati" data-price="13.90">
+                <h3>Escalope de poulet avec riz basmati</h3>
+                <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
+                <button class="add-to-order">Añadir a mi pedido</button>
+            </div>
+
+            <h2 class="titulo2">DESSERTS</h2>
+
+            <div class="menu-item" data-name="glace fricky fraise" data-price="0.0">
+                <h3>Glace Fricky Fraise</h3>
+                <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
+                <button class="add-to-order">Añadir a mi pedido</button>
+            </div>
+
+            <div class="menu-item" data-name="glace punky vanille" data-price="0.0">
+                <h3>Glace Punky vanille</h3>
+                <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
+                <button class="add-to-order">Añadir a mi pedido</button>
+            </div>
+
+            <div class="menu-item" data-name="glace kuaky chocolat" data-price="0.0">
+                <h3>Glace Kuaky Chocolat</h3>
+                <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
+                <button class="add-to-order">Añadir a mi pedido</button>
+            </div>
+
+            <div class="menu-item" data-name="crêpe au sucre ou à la nutella" data-price="0.0">
+                <h3>Crêpe au sucre ou à la Nutella</h3>
+                <p>200gr filet de boeuf accompagné de légumes sauté, puré de pomme de terre et la sause de votre choix</p>
+                <button class="add-to-order">Añadir a mi pedido</button>
+            </div>
+            
+            <!-- Más ítems del menú... -->
+        </div>
     </main>
 
-    <script src="../js/js.js"></script>
 
+    
+    
+    <a href="../views/pedido.html" class="view-order">Ver mi pedido</a>
+    
+    <script src="../js/script.js"></script>
 </body>
 </html>
