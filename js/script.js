@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', function() {
             // Obtener el elemento padre (el ítem del menú)
             const menuItem = this.closest('.menu-item');
-            console.log(menuItem);
             
             // Obtener los datos del plato
             const dishName = menuItem.getAttribute('data-name');
@@ -16,9 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
             addToOrder(dishName, dishPrice);
             
             // Opcional: Feedback visual
-            this.textContent = '¡Añadido!';
+            this.textContent = '¡Ajouté!';
             setTimeout(() => {
-                this.textContent = 'Añadir a mi pedido';
+                this.textContent = 'Ajoutér a ma commande';
             }, 1000);
         });
     });

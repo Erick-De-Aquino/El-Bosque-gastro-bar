@@ -212,13 +212,13 @@ body {
 }
 
 .titulo{
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: center;
     color: #c2c1c1;
 }
 
 .titulo2{
-    margin-bottom: 0;
+    margin: 20px auto;
     text-align: center;
     color: #c2c1c1;
 }
@@ -227,7 +227,6 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    
 }
 
 .menu-item {
