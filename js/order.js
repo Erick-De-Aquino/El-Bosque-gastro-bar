@@ -28,7 +28,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Opcional: Botón para limpiar el pedido
     const clearButton = document.createElement('button');
+    clearButton.classList.add('btnLimpia')
     clearButton.textContent = ' Order clair ';
+    console.log(clearButton);
+    
     clearButton.addEventListener('click', function() {
         localStorage.removeItem('order');
         orderList.innerHTML = '<p>Votre commande a été réglée.</p>';

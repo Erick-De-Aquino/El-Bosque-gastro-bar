@@ -275,6 +275,14 @@ body {
     border-radius: 4px;
 }
 
+.btnLimpia{
+    padding: 10px 15px;
+    background-color: #db3434;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
 #order-list{
     margin: 20px auto;
     color: #c2c1c1;
