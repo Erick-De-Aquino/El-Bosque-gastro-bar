@@ -133,11 +133,10 @@ section{
     display: flex;
     list-style-type: none;
     background-color: rgb(136, 136, 136);
-    width: 180px;
+    width: 200px;
     justify-content: center;
     padding: 15px;
     align-items: center;
-    height: 20px;
     border-radius: 5px;
 }
 .li1{
@@ -147,25 +146,25 @@ section{
 }
 .li2{
     position: fixed;
-    top: 100px;
+    top: 120px;
     right: 0px;
     animation: miTransition2 1s;
 }
 .li3{
     position: fixed;
-    top: 130px;
+    top: 170px;
     right: 0px;
     animation: miTransition3 1s;
 }
 .li4{
     position: fixed;
-    top: 160px;
+    top: 220px;
     right: 0px;
     animation: miTransition4 1s;
 }
 .li5{
     position: fixed;
-    top: 190px;
+    top: 270px;
     right: 0px;
     animation: miTransition5 1s;
 }
@@ -222,6 +221,9 @@ body {
     text-align: center;
     color: #c2c1c1;
 }
+.titulo3{
+    color: #e63946;
+}
 
 .menu-container {
     display: grid;
@@ -264,7 +266,17 @@ body {
     background-color: #45a049;
 }
 
-.view-order, .back-to-menu {
+.back-to-menu {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.view-order {
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -313,4 +325,44 @@ body {
     text-align: right;
     margin-top: 15px;
     font-size: 1.2em;
+}
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*||||||||||||||||||||||||||||||||||||||||FOOTER||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+footer{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-color: #59595a;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+margin-top: 30px;
+}
+footer div{
+    justify-items: center;
+    padding: 20px 0 40px;
+}
+footer div h3{
+    width: 160px;
+    color: white;
+    padding: 20px 0 5px 0;
+    border-bottom: 2px solid #00C3FF;
+    margin-bottom: 20px;
+    text-align: center;
+}
+footer div a i{
+    background-color: rgba(255,255,255,0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    padding: 13px;
+}
+footer div p{
+    color: white;
+}
+footer div a{
+    color: white;
+    text-decoration: none;
 }
