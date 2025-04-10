@@ -313,6 +313,7 @@ body {
 #order-list li {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 8px 0;
 }
 
@@ -320,11 +321,24 @@ body {
     border-bottom: 1px solid #eee;
 
 }
+
 .order-total {
     font-weight: bold;
     text-align: right;
     margin-top: 15px;
     font-size: 1.2em;
+}
+
+.borrar{
+    background-color: #db3434;
+    border: none;
+    padding: 0 8px;
+    border-radius: 5px;
+}
+.borrar p{
+    transform: rotate(45deg);
+    font-size: 2rem;
+    color: white;
 }
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 /*||||||||||||||||||||||||||||||||||||||||FOOTER||||||||||||||||||||||||||||||||||||||||||||||||*/
